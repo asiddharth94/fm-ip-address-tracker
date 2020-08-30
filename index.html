@@ -9,10 +9,6 @@
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin=""/>
 
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-   crossorigin=""></script>
-   
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link rel="stylesheet" href="./styles.css">
   
@@ -29,9 +25,34 @@
           <img src="./images/icon-arrow.svg" alt="Search Arrow Icon">
         </div>
       </div>
+      <div class="search-results">
+        <div class="search-results-item">
+          <p>ip address</p>
+          <p></p>
+          <div class="border-length"></div>
+        </div>
+        <div class="search-results-item">
+          <p>location</p>
+          <p></p>
+          <div class="border-length"></div>
+        </div>
+        <div class="search-results-item">
+          <p>timezone</p>
+          <p></p>
+          <div class="border-length"></div>
+        </div>
+        <div class="search-results-item">
+          <p>isp</p>
+          <p></p>
+        </div>
+      </div>
     </div>
     <div id="mapid"></div>
   </div>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
    <script src="./main.js"></script>
 </body>
 </html>

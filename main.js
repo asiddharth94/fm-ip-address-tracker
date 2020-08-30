@@ -13,3 +13,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 L.marker([51.5, -0.09], {icon: mapMarker}).addTo(myMap);
+
+// var res = fetch('https://geo.ipify.org/api/v1?apiKey=at_DuE1mQRJGaRuY1kbYgW6ggKTBGMDw&ipAddress=8.8.8.8');
+
+// res.then(response => {
+//     return response.json();
+// }).then(data => console.log(data));
