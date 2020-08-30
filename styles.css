@@ -34,10 +34,12 @@ input {
     height: 40px;
     border: none;
     border-radius: 10px;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
-::placeholder {
-    padding-left: 20px;
+input:focus {
+    outline: none;
 }
 
 .search-icon {
@@ -52,6 +54,7 @@ input {
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 #mapid {
