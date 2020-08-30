@@ -52,3 +52,7 @@ input {
     top: 0;
     right: 0;
 }
+
+#mapid {
+    height: 65vh;
+}
