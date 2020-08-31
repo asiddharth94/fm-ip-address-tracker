@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="A website which tracks down IP Address" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
 
-  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-  <link rel="stylesheet" href="./styles.css">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-</head>
-<body>
-  <div class="container">
-    <div class="search-container">
-      <h1 class="heading">IP Address Tracker</h1>
-      <div class="search-box">
-        <input type="text" placeholder="Search for any IP address or domain">
-        <div class="search-icon">
-          <img src="./images/icon-arrow.svg" alt="Search Arrow Icon">
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <h1 class="heading">IP Address Tracker</h1>
+        <div class="search-box">
+          <label for="search"></label>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search for any IP address or domain"
+          />
+          <div class="search-icon">
+            <img src="./images/icon-arrow.svg" alt="Search Arrow Icon" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results-item">
+            <p>ip address</p>
+            <p class="ip-address">-</p>
+            <div class="border-length"></div>
+          </div>
+          <div class="search-results-item">
+            <p>location</p>
+            <p class="location">-</p>
+            <div class="border-length"></div>
+          </div>
+          <div class="search-results-item">
+            <p>timezone</p>
+            <p class="timezone">-</p>
+            <div class="border-length"></div>
+          </div>
+          <div class="search-results-item">
+            <p>isp</p>
+            <p class="isp">-</p>
+          </div>
         </div>
       </div>
-      <div class="search-results">
-        <div class="search-results-item">
-          <p>ip address</p>
-          <p class="ip-address">-</p>
-          <div class="border-length"></div>
-        </div>
-        <div class="search-results-item">
-          <p>location</p>
-          <p class="location">-</p>
-          <div class="border-length"></div>
-        </div>
-        <div class="search-results-item">
-          <p>timezone</p>
-          <p class="timezone">-</p>
-          <div class="border-length"></div>
-        </div>
-        <div class="search-results-item">
-          <p>isp</p>
-          <p class="isp">-</p>
-        </div>
-      </div>
+      <div id="mapid"></div>
     </div>
-    <div id="mapid"></div>
-  </div>
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-   crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
 
-   <script src="./main.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
